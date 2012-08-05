@@ -82,7 +82,7 @@
 					<section id="prize_copy">
 						<h4>Gran Premio</h4>
 						<h3>Estadia en Rancho Constanza</h3>
-						<p>El ganador podra disfrutar de una estadía en el Hotel Rancho Constanza desde el 22 al 24 de septiembre con desayuno, almuerzo, cena y tour frutal incluido para el y un acompañante. <a href="#">Conoce más</a></p>
+						<p>El ganador podra disfrutar de una estadía en el Hotel Rancho Constanza desde el 22 al 24 de septiembre con desayuno, almuerzo, cena y tour frutal incluido para el y un acompañante. <a id="hotel_lightbox" href="#">Conoce más</a></p>
 					</section>
 				</section><!-- #the_prize -->
 				

@@ -13,7 +13,7 @@ div.lightbox {
 	margin: 0px;
 	padding: 0px;
 }
-.termsbox {
+.termsbox, .hotel_details {
 	display: none;
 	position: absolute;
 	width: 620px;
@@ -24,7 +24,7 @@ div.lightbox {
 	margin-top: -240px;
 	z-index: 999996;
 }
-.termsbox .closebtn, .sharebg .closebtn {
+.termsbox .closebtn, .sharebg .closebtn, .hotel_details .closebtn {
 	display: block;
 	position: absolute;
 	top: -5px;
@@ -34,7 +34,7 @@ div.lightbox {
 	text-indent: -99999px;
 	background: transparent url(../images/close_btn.png) no-repeat;
 }
-.termsbox h1.lightheader, .sharebg h1.lightheader {
+.termsbox h1.lightheader, .sharebg h1.lightheader, .hotel_details h1.lightheader {
 	display: block;
 	color: #FFF;
 	font-family: Helvetica, Arial, sans-serif;
@@ -146,4 +146,36 @@ div.lightbox {
 	float: right;
 }
 #share_fb, #share_twitter { display: none; }
+
+/* LightBox : Hotel Details --------------------------------------------------------------------- */
+.hotel_details {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 620px;
+	height: 300px;
+	margin-left: -325px;
+	margin-top: -150px;
+	border-radius: 15px;
+	padding: 5px;
+	z-index: 999997;
+}
+.hotel_details .closebtn { top: 0px; }
+.hotel_info {
+	height: 450px;
+	padding: 20px;
+	border-radius: 0px 0px 6px 6px;
+	border: solid 1px #CCC;
+	background: #FFF;
+}
+.hotel_info h2 {
+	margin: 0px 0px 10px 0px;
+}
+.hotel_info p {
+	color: #464646;
+	margin: 0px 0px 15px 0px;
+	font-size: 13px;
+	line-height: 20px;
+}
 

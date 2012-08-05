@@ -105,6 +105,25 @@ CONSTANZA.app = new function() {
 			});
 		});
 	}
+	
+	/* LightBox Hotel Details */
+	this.hotelLightbox = function() {
+		var $lightBox = $('div.lightbox');
+		var $hotelbg = $('.hotel_details');
+		
+		$lightBox.fadeIn('fast', function() {
+			$hotelbg.fadeIn('fast');
+		});
+		
+		/* Close the lightbox */
+		$('a.closebtn').click(function(e) {
+			e.preventDefault();
+			
+			$hotelbg.fadeOut('fast', function() {
+				$lightBox.fadeOut('fast');
+			});
+		});
+	}
 }
 
 
@@ -113,6 +132,12 @@ $(document).ready(function() {
 	$('#copyrights a.the_terms').click(function(e) {
 		e.preventDefault();
 		CONSTANZA.app.termsLightbox();
+	});
+	
+	/* click to open Hotel Details Lightbox */
+	$('#hotel_lightbox').click(function(e) {
+		e.preventDefault();
+		CONSTANZA.app.hotelLightbox();
 	});
 	
 	/* click to open sharing Lightbox */
