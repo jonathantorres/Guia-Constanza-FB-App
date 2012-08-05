@@ -34,7 +34,7 @@ div.lightbox {
 	text-indent: -99999px;
 	background: transparent url(../images/close_btn.png) no-repeat;
 }
-.termsbox h1.lightheader {
+.termsbox h1.lightheader, .sharebg h1.lightheader {
 	display: block;
 	color: #FFF;
 	font-family: Helvetica, Arial, sans-serif;
@@ -84,18 +84,17 @@ div.lightbox {
 	border-radius: 15px;
 	padding: 5px;
 	z-index: 999997;
-	background: #003366;
 }
-.sharebg .closebtn { top: -7px; left: 634px; }
+.sharebg .closebtn { top: 0px; left: 600px; }
 .sharenav { overflow: hidden; }
 .sharenav li {
 	float: left;
-	color: #155D8F;
+	color: #6ea100;
 	font-size: 14px;
 	margin: 0px 30px 0px 0px;
 	padding: 5px 0px 5px 34px;
 }
-.sharenav li.selected { color: #f8cd33; }
+.sharenav li.selected { color: #FFF; }
 .sharenav li#invite { background: transparent url(../images/sharing_steps.png) no-repeat 0px -78px;  }
 .sharenav li#invite.selected { background: transparent url(../images/sharing_steps.png) no-repeat 0px -3px; }
 .sharenav li#fbwall { background: transparent url(../images/sharing_steps.png) no-repeat 0px -102px; }
@@ -104,18 +103,12 @@ div.lightbox {
 .sharenav li#twitter.selected { background: transparent url(../images/sharing_steps.png) no-repeat 0px -52px; }
 .sharecontent {
 	height: 225px;
-	border: 1px solid #6EC5F5;
-	border-radius: 10px;
-	margin: 6px 0px 0px 0px;
+	border: 1px solid #b4b4b4;
+	border-top: none;
+	border-radius: 0px 0px 5px 5px;
+	margin: 0px;
 	padding: 20px;
 	background: #ffffff;
-	background: -moz-linear-gradient(top,  #ffffff 0%, #d6d5d5 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d6d5d5));
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#d6d5d5 100%);
-	background: -o-linear-gradient(top,  #ffffff 0%,#d6d5d5 100%);
-	background: -ms-linear-gradient(top,  #ffffff 0%,#d6d5d5 100%);
-	background: linear-gradient(top,  #ffffff 0%,#d6d5d5 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d5d5',GradientType=0 );
 }
 .invitations { margin: 15px 0px 0px 0px; }
 .invitations h3 {
@@ -132,7 +125,7 @@ div.lightbox {
 }
 .invitations span.points.biggest {
 	font-size: 50px;
-	color: #125486;
+	color: #FFF;
 	width: 94px;
 	height: 74px;
 	padding: 35px 20px 20px 19px;
@@ -145,7 +138,7 @@ div.lightbox {
 }
 .invitations a.skip, .invitations a.skip:active, .invitations a.skip:visited, .invitations a.skip:link {
 	display: block;
-	color: #4F5051;
+	color: #345b01;
 	text-decoration: underline;
 	font-size: 14px;
 	margin: 14px 156px 0px 0px;
