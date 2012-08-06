@@ -110,6 +110,11 @@ CONSTANZA.app = new function() {
 	this.hotelLightbox = function() {
 		var $lightBox = $('div.lightbox');
 		var $hotelbg = $('.hotel_details');
+		var $hotelGallery = $('.hotel_gallery');
+		var $rightArrow = $hotelGallery.find('span.arrow.right');
+		var $leftArrow = $hotelGallery.find('span.arrow.left');
+		var currentImg = 1;
+		var numOfImages = 5;
 		
 		$lightBox.fadeIn('fast', function() {
 			$hotelbg.fadeIn('fast');
@@ -118,10 +123,52 @@ CONSTANZA.app = new function() {
 		/* Close the lightbox */
 		$('a.closebtn').click(function(e) {
 			e.preventDefault();
+			currentImg = 1;
 			
 			$hotelbg.fadeOut('fast', function() {
 				$lightBox.fadeOut('fast');
 			});
+		});
+		
+		/* Hotel Gallery */
+		$hotelGallery.find('img').each(function(i) {
+			if (i == 0) {
+				$(this).css( { display: 'block' } );
+			} else {
+				$(this).css( { display: 'none' } );
+			}
+		});
+		
+		/* reset selected icons */
+		$('.gallery_nav span').removeClass().addClass('item');
+		$('.gallery_nav span#' + currentImg).addClass('selected');
+		
+		$rightArrow.click(function(e) {
+			if (currentImg >= numOfImages) {
+				currentImg = 5;
+				return;
+			}
+			
+			$hotelGallery.find('.img' + currentImg).fadeOut('fast');
+			currentImg++;
+			$hotelGallery.find('.img' + currentImg).fadeIn('fast');
+			
+			$('.gallery_nav span').removeClass().addClass('item');
+			$('.gallery_nav span#' + currentImg).addClass('selected');
+		});
+		
+		$leftArrow.click(function(e) {
+			if (currentImg <= 1) {
+				currentImg = 1;
+				return;
+			}
+			
+			$hotelGallery.find('.img' + currentImg).fadeOut('fast');
+			currentImg--;
+			$hotelGallery.find('.img' + currentImg).fadeIn('fast');
+			
+			$('.gallery_nav span').removeClass().addClass('item');
+			$('.gallery_nav span#' + currentImg).addClass('selected');
 		});
 	}
 }

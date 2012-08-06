@@ -68,11 +68,11 @@
 				<span class="arrow right"></span>
 				
 				<div class="gallery_nav">
-					<span class="item selected"></span>
-					<span class="item"></span>
-					<span class="item"></span>
-					<span class="item"></span>
-					<span class="item"></span>
+					<span id="1" class="item selected"></span>
+					<span id="2" class="item"></span>
+					<span id="3" class="item"></span>
+					<span id="4" class="item"></span>
+					<span id="5" class="item"></span>
 				</div><!-- .gallery_nav -->
 				
 				<img class="img1" src="images/hotel_img1.jpg" alt="Image">
