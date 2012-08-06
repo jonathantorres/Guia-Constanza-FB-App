@@ -153,21 +153,19 @@ div.lightbox {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 620px;
-	height: 300px;
+	width: 640px;
 	margin-left: -325px;
 	margin-top: -150px;
 	border-radius: 15px;
 	padding: 5px;
 	z-index: 999997;
 }
-.hotel_details .closebtn { top: 0px; }
+.hotel_details .closebtn { top: 0px; left: 584px; }
 .hotel_info {
-	height: 450px;
-	padding: 20px;
+	padding: 20px 40px 20px 40px;
 	border-radius: 0px 0px 6px 6px;
 	border: solid 1px #CCC;
-	background: #FFF;
+	background: #FFF url(../images/frame_shadow.png) no-repeat -33px 307px;
 }
 .hotel_info h2 {
 	margin: 0px 0px 10px 0px;
@@ -178,4 +176,46 @@ div.lightbox {
 	font-size: 13px;
 	line-height: 20px;
 }
+.hotel_gallery {
+	display: block;
+	position: relative;
+	height: 370px;
+	background: transparent url(../images/photo_frame.png) no-repeat -12px 0px;
+}
+.hotel_gallery img {
+	position: absolute;
+	display: block;
+	top: 20px;
+	left: 12px;
+	z-index: 9998;
+}
+.hotel_gallery span.arrow {
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 45px;
+	top: 150px;
+	cursor: pointer;
+}
+.hotel_gallery span.arrow.right { left: 554px; background: transparent url(../images/arrow_right.png) no-repeat; }
+.hotel_gallery span.arrow.left { left: -23px; background: transparent url(../images/arrow_left.png) no-repeat; }
+.hotel_gallery div.gallery_nav {
+	display: block;
+	position: absolute;
+	height: 20px;
+	overflow: hidden;
+	top: 35px;
+	left: 457px;
+	z-index: 9999;
+}
+div.gallery_nav span.item {
+	display: block;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	float: left;
+	margin: 0px 0px 0px 2px;
+	background: transparent url(../images/dot_normal.png) no-repeat;
+}
+div.gallery_nav span.item.selected { margin: 1px 0px 0px 2px; background: transparent url(../images/dot_selected.png) no-repeat; }
 

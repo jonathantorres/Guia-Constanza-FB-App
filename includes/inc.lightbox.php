@@ -62,6 +62,26 @@
 		
 		<div class="hotel_info">
 			<h2>Hotel Rancho Constanza</h2>
+			
+			<div class="hotel_gallery">
+				<span class="arrow left"></span>
+				<span class="arrow right"></span>
+				
+				<div class="gallery_nav">
+					<span class="item selected"></span>
+					<span class="item"></span>
+					<span class="item"></span>
+					<span class="item"></span>
+					<span class="item"></span>
+				</div><!-- .gallery_nav -->
+				
+				<img class="img1" src="images/hotel_img1.jpg" alt="Image">
+				<img class="img2" src="images/hotel_img1.jpg" alt="Image">
+				<img class="img3" src="images/hotel_img1.jpg" alt="Image">
+				<img class="img4" src="images/hotel_img1.jpg" alt="Image">
+				<img class="img5" src="images/hotel_img1.jpg" alt="Image">
+			</div><!-- .hotel_gallery -->
+			
 			<p>Proyecto turístico, dedicado al turismo ecológico-educativo, su estilo rústico construido a base de concreto pero adornado con detalles singulares hacen de este complejo ideal para pasarla en familia o entre amigos.</p>
 
 			<p>Consta de 10 habitaciones standard para parejas, 1 Suite sencilla para dos personas y 1 Suite Doble para cuatros personas, así como 12 villas tipo A y con capacidades para 5 personas.</p>
