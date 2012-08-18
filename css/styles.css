@@ -176,7 +176,23 @@ a:hover { color: #284501; text-decoration: none; }
 	background: linear-gradient(to bottom,  #b90000 0%,#650000 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b90000', endColorstr='#650000',GradientType=0 );
 }
-#user_box img.user_pic { border: solid 2px #FFF; float: left; margin: 0px 10px 0px 0px; }
+#user_box .user_pic {
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 65px;
+	float: left; 
+	margin: 0px 10px 0px 0px;
+	background: transparent url(../images/profile_img_frame.png) no-repeat -4px -4px;
+}
+#user_box .user_pic img { 
+	position: absolute;
+	display: block;
+	top: 9px; 
+	left: 9px;
+	width: 43px;
+	height: 44px;
+}
 #user_box span { display: block; font-size: 12px; }
 #user_box h4 { font-size: 34px; font-weight: bold; margin: 0px 0px 2px 0px; color: #fffb00; }
 

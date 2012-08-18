@@ -7,7 +7,9 @@
 				<div class="gclogo"></div><!-- .gclogo -->
 				
 				<div id="user_box">
-					<img class="user_pic" src="images/user_pic.jpg" alt="User Picture">
+					<div class="user_pic">
+						<img src="images/user_pic.jpg" alt="User Picture">
+					</div><!-- .user_pic -->
 					<span>Actualmente tienes</span>
 					<h4>2,000</h4>
 					<span>posibilidades de ganar</span>
